@@ -60,9 +60,28 @@ function sumOfAllNum(num) {
 }
 
 let result = sumOfAllNum(10);
-console.log(result)
+// console.log(result);
+
+// Write a function that takes in a number as an argument and uses a do-while loop to calculate the sum of all the even numbers from 0 to that number returning the sum as the result
+
+function sumOfAllEven(num) {
+
+    let i = 0;
+    let sumOfEven = 0;
+
+    do {
+        if (i % 2 === 0) {
+            sumOfEven += i
+        }
+        i++;
+    } while (i < num)
+
+    return sumOfEven;
+}
 
 
+let evenResult = sumOfAllEven(10);
+console.log(evenResult);
 
 
         
