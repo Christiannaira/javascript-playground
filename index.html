@@ -141,8 +141,48 @@ function monthNumber(your_month_num) {
 }
 
 let yourMonth = monthNumber(11);
-console.log(yourMonth)
+// console.log(yourMonth)
 
+
+function numOfDay(day_name) {
+
+    let day_number;
+
+    switch(day_name) {
+
+        case "Sunday":
+            day_number = 1;
+            break;
+        case "Monday":
+            day_number = 2;
+            break; 
+        case "Tuesday":
+            day_number = 3;
+            break; 
+        case "Wednesday":
+            day_number = 4;
+            break; 
+        case "Thursday":
+            day_number = 5;
+            break; 
+        case "Friday":
+            day_number = 6;
+            break; 
+        case "Saturday":
+            day_number = 7;
+            break;
+        default:
+            day_number = 'There\'s no day'
+            break;
+
+    }
+
+    return day_number;
+
+}
+
+let day_name = numOfDay('Sunsday');
+console.log(day_name);
         
 
     </script>
