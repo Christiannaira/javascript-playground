@@ -42,7 +42,26 @@ function countUp(num) {
 
 }
 
-countUp(10);
+// countUp(10);
+
+// Write a function that takes in a number and uses a for loop to generate the sum of all the numbers from 1 to that number, returning the sum as the result.
+
+function sumOfAllNum(num) {
+
+    let result = 0;
+
+    for (let i = 1; i < num; i++) {
+        result += i
+    }
+
+    return result;
+
+
+}
+
+let result = sumOfAllNum(10);
+console.log(result)
+
 
 
 
