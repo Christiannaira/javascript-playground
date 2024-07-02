@@ -7,7 +7,9 @@
 </head>
 <body>
 
-    <h1>Hello World</h1>
+    <h1 id="demo">Hello World</h1>
+
+
 
     <script>
 
@@ -182,8 +184,256 @@ function numOfDay(day_name) {
 }
 
 let day_name = numOfDay('Sunsday');
-console.log(day_name);
+// console.log(day_name);
+
+
+function astrologicalSign(month, num) {
+
+    let sign;
+    let invalid;
+
+    switch(month) {
+
+        case 'january':
+
+            if (num >= 20 && num <= 31) {
+
+                sign = "Aquarius"
+
+            } else if (num >= 1 && num <= 19) {
+
+                sign = "Capricorn"
+
+            }
+            
+            else {
+
+                invalid = `${num} is invalid`;   
+
+            }
+
+            break;
+
+        case 'february':
+
+            if (num >= 19 && num <= 29) {
+
+                sign = "Pisces";
+
+            } else if (num >= 1 && num <= 18) {
+
+                sign = "Aquarius";
+
+            } else {
+
+                invalid = `${num} is invalid`;   
+
+            }
+
+            break;
+
+        case 'march': 
+
+            if (num >= 21 && num <= 31) {
+
+                sign = "Aries";
+
+            } else if (num >= 1 && num <= 20) {
+
+                sign = 'Pisces';
+
+            } else {
+
+                invalid = `${num} is invalid`;
+
+            }
+
+            break;
         
+        case 'april': 
+
+            if (num >= 20 && num <= 30) {
+
+                sign = "Taurus"
+
+            } else if (num >= 1 && num <= 19) {
+
+                sign = "Aries";
+
+            } else {
+
+                invalid = `${num} is invalid`;   
+
+            }
+
+            break; 
+
+        case 'may': 
+
+            if (num >= 21 && num <= 31) {
+
+                sign = "Gemini";
+
+            } else if (num >= 1 && num <= 20) {
+
+                sign = "Taurus";
+
+            } else {
+
+                invalid = `${num} is invalid`;
+
+            }
+
+            break; 
+
+        case 'june': 
+            
+        if (num >= 21 && num <= 30) {
+
+            sign = "Cancer";
+
+        } else if (num >= 1 && num <= 20) {
+
+            sign = "Gemini";
+
+        } else {
+
+            invalid = `${num} is invalid`;
+
+        }
+
+        break;
+
+    case 'july': 
+
+        if (num >= 23 && num <= 31) {
+
+            sign = "Leo";
+
+        } else if (num >= 1 && num <= 22) {
+
+            sign = "Cancer";
+
+        } else {
+
+            invalid = `${num} is invalid`; 
+
+        }
+
+        break; 
+
+    case 'august': 
+
+        if (num >= 23 && num <= 31) {
+
+            sign = "Virgo";
+
+        } else if (num >= 1 && num <= 22) {
+
+            sign = "Leo"; 
+
+        } else {
+
+            invalid = `${num} is invalid`;
+
+        } 
+
+        break; 
+
+    case "september": 
+
+        if (num >= 23 && num <= 30) {
+
+            sign = "Libra";
+
+        } else if (num >= 1 && num <= 22) {
+
+            sign = "Virgo"
+
+        } else {
+
+            invalid = `${num} is invalid`;
+
+        }
+
+        break;
+
+    case "october": 
+
+        if (num >= 23 && num <= 31) {
+
+            sign = "Scorpio";
+
+        } else if (num >= 1 && num <= 22) {
+
+            sign = "Libra";
+
+        } else {
+
+            invalid = `${num} is invalid`;
+
+        }
+
+        break; 
+
+    case "november": 
+
+        if (num >= 22 && num <= 30) {
+
+            sign = "Sagittarius";
+
+        } else if (num >= 1 && num <= 21) {
+
+            sign = "Scorpio";
+
+        } else {
+
+            invalid = `${num} is invalid`;
+
+        }
+
+        break; 
+
+    case "december": 
+
+        if (num >= 22 && num <= 31) {
+
+            sign = "Capricorn";
+
+        } else if (num >= 1 && num <= 21) {
+
+            sign = "Sagittarius";
+
+        } else {
+
+            invalid = `${num} is invalid`;
+
+        }
+
+        break;
+
+
+    }
+
+    if (sign) {
+
+        return `Your Astrological Sign is ${sign}`
+
+    } else {
+
+        return invalid;
+
+    }
+
+
+}
+
+
+let user_month = prompt("Enter your birth-month: ");
+let user_day = prompt("Enter your birth-day: ");
+let astrological_sign = astrologicalSign(user_month.toLowerCase(), user_day);
+
+document.getElementById("demo").innerHTML = astrological_sign;
 
     </script>
 </body>
