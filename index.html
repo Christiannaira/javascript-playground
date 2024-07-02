@@ -428,12 +428,47 @@ function astrologicalSign(month, num) {
 
 }
 
+// let user_month = prompt("Enter your birth-month: ");
+// let user_day = prompt("Enter your birth-day: ");
+// let astrological_sign = astrologicalSign(user_month.toLowerCase(), user_day);
 
-let user_month = prompt("Enter your birth-month: ");
-let user_day = prompt("Enter your birth-day: ");
-let astrological_sign = astrologicalSign(user_month.toLowerCase(), user_day);
+// document.getElementById("demo").innerHTML = astrological_sign;
 
-document.getElementById("demo").innerHTML = astrological_sign;
+// Write a function that takes in a number and uses nested loops to output a pattern of numbers based on the number.
+
+function numberPattern(num) {
+
+  for (let i = 1; i < num; i++) {
+    
+    let row = '';
+    
+    for (let j = 1; j < i; j++) {
+
+        row += `${j}`
+    }
+
+    console.log(row)
+
+  }
+
+  for (let x = 1; num > x; num--) {
+
+    let new_row = '';
+
+    for (let y = 0; num > y; num--) {
+
+        new_row += `${num}`;
+
+    }
+
+    console.log(new_row)
+
+  }     
+
+
+}
+
+numberPattern(7);
 
     </script>
 </body>
