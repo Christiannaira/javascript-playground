@@ -444,27 +444,29 @@ function numberPattern(num) {
     
     for (let j = 1; j < i; j++) {
 
-        row += `${j}`
+        row += `${j} \t`
+
     }
 
     console.log(row)
 
   }
 
-  for (let x = 1; num > x; num--) {
+  num = num - 2;
 
-    let new_row = '';
+  for (let i = 1; num > i; num--) {
 
-    for (let y = 0; num > y; num--) {
+    let second_row = "";
 
-        new_row += `${num}`;
+    for (let x = 1; num > x; x++) {
+
+        second_row += `${x} \t`;
 
     }
 
-    console.log(new_row)
+    console.log(second_row);
 
-  }     
-
+  }
 
 }
 
