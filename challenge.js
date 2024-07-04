@@ -23,10 +23,39 @@ function FizzBuzz(num) {
 
 }
 
+// FizzBuzz(30);
 
-FizzBuzz(30);
 
+function FizzBuzz2(num) {
 
+    let fizz_buzz = "";
+
+    for (let x = 1; x < num; x++) {
+
+        switch(x) {
+
+            case x % 3 == 0 && x && 5 == 0:
+                fizz_buzz = `${x}, FizzBuzz`;
+                break; 
+            case x % 3 == 0:
+                fizz_buzz = `${i}, Fizz`;
+                break;
+            case x % 5 == 0: 
+                fizz_buzz = `${i}, Buzz`;
+                break; 
+            default: 
+                fizz_buzz = `${i}, Number`;
+                break
+
+        }
+
+    }
+
+    console.log(fizz_buzz)
+
+} //using switch statements
+
+FizzBuzz(40);
 
 
 
