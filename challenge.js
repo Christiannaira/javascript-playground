@@ -55,7 +55,21 @@ function FizzBuzz2(num) {
 
 } //using switch statements
 
-FizzBuzz(40);
+// FizzBuzz(40);
 
+
+function FizzBuzzClass(num) {
+
+
+} //using objects
+
+function FizzBuzzArray(num) {
+
+} //using array
+
+
+// Write a Javascript function that takes a string as input and determines whether it is a palindrome (reads the same forwards and backwards). The function should return true if the string is a palindrome and false otherwise. You should consider edge cases. Ignore non-alphanumeric characters and handle case sensitivity. Palindrome
+
+// Write a javascript function that generates the Fibonacci sequence up to a given number of terms. The function should return an array containing the sequence.
 
 
