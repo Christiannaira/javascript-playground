@@ -77,14 +77,14 @@ function FizzBuzzArray(num) {
 const numbersTwo = [4, 9, 16, 25];
 const newArr = numbersTwo.map(Math.sqrt);
 
-document.getElementById("demo").innerHTML = newArr
+// document.getElementById("demo").innerHTML = newArr
 
 // Array Map 2
 
 const numbersThree = [65, 44, 12, 4];
 const newArr2 = numbersThree.map(myFunction);
 
-document.getElementById("demo").innerHTML = newArr2;
+// document.getElementById("demo").innerHTML = newArr2;
 
 function myFunction(num) {
     return num * 10;
@@ -98,7 +98,7 @@ const persons = [
     {firstname: "Jayne", lastname: "Cobb"}
 ];
 
-document.getElementById("demo").innerHTML = persons.map(getFullName);
+// document.getElementById("demo").innerHTML = persons.map(getFullName);
 
 function getFullName(item) {
 
@@ -108,3 +108,13 @@ function getFullName(item) {
 
 
 // Array Filter
+
+let filterNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let evenNumbers = filterNumbers.filter((num) => {
+
+    return num % 2 === 0;
+
+})
+
+console.log(evenNumbers);
