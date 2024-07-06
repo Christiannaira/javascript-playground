@@ -79,5 +79,15 @@ const newArr = numbersTwo.map(Math.sqrt);
 
 document.getElementById("demo").innerHTML = newArr
 
+const numbersThree = [65, 44, 12, 4];
+const newArr2 = numbersThree.map(myFunction);
+
+
+document.getElementById("demo").innerHTML = newArr2;
+
+function myFunction(num) {
+    return num * 10;
+}
+
 
 // Array Filter
