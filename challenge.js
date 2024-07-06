@@ -127,4 +127,10 @@ function checkAdult(age) {
     return age >= 18;
 }
 
-console.log(adult);
+// console.log(adult);
+
+const newAge = 25; 
+
+let isLegal = (age > 18) ? "You are legal" : "You are not legal";
+
+console.log(isLegal);

@@ -10,6 +10,8 @@ const doubledNumbers = numbers.map(function(num) {
 
 })
 
-for (let i = 0; i < doubledNumbers.length; i++) {
-    console.log(doubledNumbers[i]);
-}
+// for (let i = 0; i < doubledNumbers.length; i++) {
+//     console.log(doubledNumbers[i]);?
+// }
+
+// Array Filter
