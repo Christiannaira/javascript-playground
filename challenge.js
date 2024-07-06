@@ -72,21 +72,38 @@ function FizzBuzzArray(num) {
 
 // Write a javascript function that generates the Fibonacci sequence up to a given number of terms. The function should return an array containing the sequence.
 
-// Array Map
+// Array Map 1
 
 const numbersTwo = [4, 9, 16, 25];
 const newArr = numbersTwo.map(Math.sqrt);
 
 document.getElementById("demo").innerHTML = newArr
 
+// Array Map 2
+
 const numbersThree = [65, 44, 12, 4];
 const newArr2 = numbersThree.map(myFunction);
-
 
 document.getElementById("demo").innerHTML = newArr2;
 
 function myFunction(num) {
     return num * 10;
+}
+
+// Array Map 3
+
+const persons = [
+    {firstname: "Malcom", lastname: 'Reynolds'},
+    {firstname: "Kaylee", lastname: "Fryle"},
+    {firstname: "Jayne", lastname: "Cobb"}
+];
+
+document.getElementById("demo").innerHTML = persons.map(getFullName);
+
+function getFullName(item) {
+
+    return [item.firstname, item.lastname].join(" ");
+
 }
 
 
