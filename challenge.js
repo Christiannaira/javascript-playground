@@ -72,4 +72,12 @@ function FizzBuzzArray(num) {
 
 // Write a javascript function that generates the Fibonacci sequence up to a given number of terms. The function should return an array containing the sequence.
 
+// Array Map
 
+const numbersTwo = [4, 9, 16, 25];
+const newArr = numbersTwo.map(Math.sqrt);
+
+document.getElementById("demo").innerHTML = newArr
+
+
+// Array Filter
