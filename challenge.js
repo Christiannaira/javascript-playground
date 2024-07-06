@@ -117,4 +117,14 @@ let evenNumbers = filterNumbers.filter((num) => {
 
 })
 
-console.log(evenNumbers);
+// console.log(evenNumbers);
+
+const age = [32, 33, 16, 40];
+
+let adult = age.filter(checkAdult); 
+
+function checkAdult(age) {
+    return age >= 18;
+}
+
+console.log(adult);
